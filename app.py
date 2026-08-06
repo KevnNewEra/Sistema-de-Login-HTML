@@ -20,9 +20,6 @@ def salvar_usuarios(usuarios):
 def criptografar_senha(senha):
     return hashlib.sha256(senha.encode()).hexdigest()
 
-# ======================
-# ROTAS
-# ======================
 
 @app.route("/")
 def home():

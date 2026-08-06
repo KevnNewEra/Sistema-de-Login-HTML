@@ -6,9 +6,6 @@ import hashlib
 app = Flask(__name__)
 app.secret_key = "chave_super_secreta"
 
-# ======================
-# FUNÇÕES
-# ======================
 
 def carregar_usuarios():
     if os.path.exists("usuarios.json"):
@@ -86,7 +83,3 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-#para criar o usuario, é só rodar o sistema, clicar em "cadastrar", preencher o que pede, pode ser qualquer coisa, e clicar em "cadastrar". Depois disso, é só clicar em "login", preencher o que pediu, e clicar em "login". Se tudo tiver certo, você será redirecionado para o dashboard, onde verá uma mensagem de boas-vindas. Se quiser sair, é só fechar o site ou clicar em "sair".
-# isso é apenas uma base para um sistema de login simples, feito por mim
